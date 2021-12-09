@@ -1,0 +1,30 @@
+
+{
+  "name": "hue-explorer",
+  "scripts": {},
+  "env": {
+    "OAUTH_CLIENT_ID_SECRET_HASH": {
+      "description": "Hash of OAuth client_id and client_secret",
+      "required": true
+    },
+    "REACT_APP_OAUTH_APP_ID": {
+      "description": "OAuth app_id",
+      "required": true
+    },
+    "REACT_APP_OAUTH_CLIENT_ID": {
+      "description": "OAuth client_id",
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [],
+  "buildpacks": [
+    {
+      "url": "https://github.com/CatChen/create-react-app-buildpack.git"
+    }
+  ]
+}

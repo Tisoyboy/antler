@@ -1,0 +1,43 @@
+{
+  "name": "hue-explorer",
+  "version": "0.3.0",
+  "private": true,
+  "homepage": "https://hueexplorer.app/",
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all",
+    "arrowParens": "always"
+  },
+  "dependencies": {
+    "bootstrap": "^4.6.2",
+    "browser-id": "^2.0.2",
+    "http-proxy-middleware": "^2.0.6",
+    "jquery": "^3.6.3",
+    "popper.js": "^1.16.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-router-dom": "^5.3.0",
+    "react-script": "^2.0.5",
+    "react-scripts": "5.0.1",
+    "versioned-storage": "^1.2.10"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "flow": "flow",
+    "eject": "react-scripts eject",
+    "postinstall": "husky install"
+  },
+  "devDependencies": {
+    "codecov": "^3.8.3",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.7",
+    "flow-bin": "^0.184.0",
+    "husky": "8",
+    "prettier": "^2.8.4",
+    "pretty-quick": "^3.1.3"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
