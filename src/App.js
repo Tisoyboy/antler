@@ -59,4 +59,43 @@ class App extends Component {
                   >
                     Bridges
                   </a>
-        
+                  <HueBridgeSelector
+                    onBridgeAuthorizationFailure={this.onBridgeAuthorizationFailure.bind(
+                      this,
+                    )}
+                    key={Math.random()}
+                  />
+                </li>
+                {activeBridgeId ? (
+                  <React.Fragment>
+                    <li className="nav-item">
+                      <NavLink
+                        className="nav-link"
+                        activeClassName="active"
+                        to={`/lights/${activeBridgeId}`}
+                      >
+                        Lights
+                      </NavLink>
+                    </li>
+                    <li className="nav-item">
+                      <NavLink
+                        className="nav-link"
+                        activeClassName="active"
+                        to={`/groups/${activeBridgeId}`}
+                      >
+                        Groups
+                      </NavLink>
+                    </li>
+                    <li className="nav-item">
+                      <NavLink
+                        className="nav-link"
+                        activeClassName="active"
+                        to={`/schedules/${activeBridgeId}`}
+                      >
+                        Schedules
+                      </NavLink>
+                    </li>
+                    <li className="nav-item">
+                      <NavLink
+                        className="nav-link"
+          
