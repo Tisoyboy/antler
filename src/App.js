@@ -98,4 +98,43 @@ class App extends Component {
                     <li className="nav-item">
                       <NavLink
                         className="nav-link"
-          
+                        activeClassName="active"
+                        to={`/scenes/${activeBridgeId}`}
+                      >
+                        Scenes
+                      </NavLink>
+                    </li>
+                    <li className="nav-item">
+                      <NavLink
+                        className="nav-link"
+                        activeClassName="active"
+                        to={`/sensors/${activeBridgeId}`}
+                      >
+                        Sensors
+                      </NavLink>
+                    </li>
+                    <li className="nav-item">
+                      <NavLink
+                        className="nav-link"
+                        activeClassName="active"
+                        to={`/rules/${activeBridgeId}`}
+                      >
+                        Rules
+                      </NavLink>
+                    </li>
+                    <li className="nav-item">
+                      <NavLink
+                        className="nav-link"
+                        activeClassName="active"
+                        to={`/configuration/${activeBridgeId}`}
+                      >
+                        Configuration
+                      </NavLink>
+                    </li>
+                    <li className="nav-item">
+                      <NavLink
+                        className="nav-link"
+                        activeClassName="active"
+                        to={`/resourcelinks/${activeBridgeId}`}
+                      >
+                        Resou
