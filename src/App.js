@@ -176,4 +176,40 @@ class App extends Component {
                     className="dropdown-menu"
                     aria-labelledby="navbarDropdown"
                   >
-                    {process.env.NODE_ENV === 'production
+                    {process.env.NODE_ENV === 'production' ? null : (
+                      <NavLink
+                        className="dropdown-item"
+                        activeClassName="active"
+                        to="/settings/oauth"
+                      >
+                        OAuth
+                      </NavLink>
+                    )}
+                    <NavLink
+                      className="dropdown-item"
+                      activeClassName="active"
+                      to="/settings/reset"
+                    >
+                      Reset
+                    </NavLink>
+                  </div>
+                </li>
+              </ul>
+              {/*
+              <form className="form-inline my-2 my-lg-0">
+                <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+                <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+              */}
+            </div>
+          </nav>
+          <div className="container-fluid">
+            <Switch>
+              <Route path="/lights/:id" component={LightsView} />
+              <Route path="/groups/:id" component={GroupsView} />
+              <Route path="/schedules/:id" component={SchedulesView} />
+              <Route path="/scenes/:id" component={ScenesView} />
+              <Route path="/sensors/:id" component={SensorsView} />
+              <Route path="/rules/:id" component={RulesView} />
+              <Route path="/configuration/:id" component={ConfigurationView} />
+              <Route path="/resourcel
