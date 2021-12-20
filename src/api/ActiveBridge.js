@@ -1,0 +1,28 @@
+// @flow strict
+
+import HueBridge from './HueBridge';
+import Storage from 'versioned-storage';
+
+const STORAGE_NAME = 'active_bridge';
+const STORAGE_VERSION = 1;
+const storage: Storage<string> = new Storage(STORAGE_NAME, STORAGE_VERSION);
+
+function restoreActiveBridge(): void {
+  const activeBridgeId = getActiveBridge();
+  if (activeBridgeId) {
+    const activeBridge = HueBridge.getById(activeBridgeId);
+    if (activeBridge && HueBridge.isLocalSupported) {
+      activeBridge.startLocalPing();
+    }
+  }
+}
+
+function selectActiveBridge(bridgeId: string): void {
+  const activeBridge = HueBridge.getById(bridgeId);
+  if (!activeBridge) {
+    throw new Error(`Cannot set active bridge: ${bridgeId}`);
+  }
+  if (HueBridge.isLocalSupported) {
+    const previousActiveBridgeId = getActiveBridge();
+    if (previousActiveBridgeId) {
+      const previousActiveBridge = Hu

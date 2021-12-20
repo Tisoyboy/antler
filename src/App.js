@@ -212,4 +212,16 @@ class App extends Component {
               <Route path="/sensors/:id" component={SensorsView} />
               <Route path="/rules/:id" component={RulesView} />
               <Route path="/configuration/:id" component={ConfigurationView} />
-              <Route path="/resourcel
+              <Route path="/resourcelinks/:id" component={ResourceLinksView} />
+              <Route path="/capabilities/:id" component={CapabilitiesView} />
+              <Route path="/console/:id" component={ConsoleView} />
+              <Route path="/settings/:dialog" component={SettingsView} />
+            </Switch>
+          </div>
+        </div>
+      </BrowserRouter>
+    );
+  }
+}
+
+export default App;
