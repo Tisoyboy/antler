@@ -25,4 +25,25 @@ function selectActiveBridge(bridgeId: string): void {
   if (HueBridge.isLocalSupported) {
     const previousActiveBridgeId = getActiveBridge();
     if (previousActiveBridgeId) {
-      const previousActiveBridge = Hu
+      const previousActiveBridge = HueBridge.getById(previousActiveBridgeId);
+      if (previousActiveBridge) {
+        previousActiveBridge.stopLocalPing();
+      }
+    }
+    activeBridge.startLocalPing();
+  }
+  storage.write(bridgeId);
+}
+
+function getActiveBridge(): ?string {
+  const activeBridgeId = storage.read();
+  return typeof activeBridgeId === 'string' ? activeBridgeId : null;
+}
+
+const ActiveBridge = {
+  restore: restoreActiveBridge,
+  select: selectActiveBridge,
+  get: getActiveBridge,
+};
+
+export default ActiveBridge;
