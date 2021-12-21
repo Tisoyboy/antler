@@ -28,4 +28,48 @@ function addBridge(bridgeId: string): void {
 
 async function discoverLocalBridges(): Promise<Array<HueBridge>> {
   const response = await fetch(NUPNP_URL);
-  const json = awai
+  const json = await response.json();
+  return json.map((item) => {
+    return new HueBridge(item.id, {
+      protocol: 'http',
+      host: item.internalipaddress,
+      port: 80,
+      local: true,
+    });
+  });
+}
+
+function loadBridges(): Array<string> {
+  const storedBridges = readStoredBridges();
+  ActiveBridge.restore();
+  const storedBridgeIds = storedBridges.map((bridge) => {
+    return bridge.id;
+  });
+  return storedBridgeIds;
+}
+
+async function fetchBridges(): Promise<Array<string>> {
+  const storedBridges = readStoredBridges();
+  const localBridges = await discoverLocalBridges();
+
+  const storedBridgeIds = storedBridges.map((bridge) => {
+    return bridge.id;
+  });
+  const localBridgeIds = localBridges.map((bridge) => {
+    return bridge.id;
+  });
+  const allBridgeIds = Array.from(
+    new Set([...storedBridgeIds, ...localBridgeIds]),
+  );
+  storage.write(allBridgeIds);
+  ActiveBridge.restore();
+  return allBridgeIds;
+}
+
+const HueBridgeList = {
+  add: addBridge,
+  load: loadBridges,
+  fetch: fetchBridges,
+};
+
+export default HueBridgeList;
