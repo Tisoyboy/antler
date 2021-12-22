@@ -69,4 +69,14 @@ describe('HueBridge retrieval', () => {
     expect(secondBridge.properties).toMatchObject(TEST_BRIDGE_PROPERTIES);
   });
 
-  it
+  it('can be retrieved by id with username requirement (requirement met)', () => {
+    const firstBridge = new HueBridge(TEST_BRIDGE_ID, TEST_BRIDGE_PROPERTIES);
+    const secondBridge = HueBridge.getAuthorizedById(TEST_BRIDGE_ID);
+    expect(secondBridge.properties).toMatchObject(TEST_BRIDGE_PROPERTIES);
+  });
+
+  it('can be retrieved by id with username requirement (requirement unmet)', () => {
+    const bridge = new HueBridge(TEST_BRIDGE_ID);
+    expect(HueBridge.getAuthorizedById(TEST_BRIDGE_ID)).toBeNull();
+  });
+});
