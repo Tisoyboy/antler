@@ -32,4 +32,41 @@ describe('HueBridge constructor', () => {
   });
 
   it('can be created with id and properties', () => {
-    const bridge = new HueBridge(TEST_BRIDGE_ID, TEST
+    const bridge = new HueBridge(TEST_BRIDGE_ID, TEST_BRIDGE_PROPERTIES);
+    expect(bridge).not.toBeNull();
+    expect(bridge.id).toBe(TEST_BRIDGE_ID);
+    expect(bridge.properties).toMatchObject(TEST_BRIDGE_PROPERTIES);
+  });
+
+  it('reuses the same instance when being created with the same id', () => {
+    const firstBridge = new HueBridge(TEST_BRIDGE_ID);
+    const secondBridge = new HueBridge(TEST_BRIDGE_ID, TEST_BRIDGE_PROPERTIES);
+    expect(secondBridge).toBe(firstBridge);
+  });
+
+  it('overrides properties when the same instance is created for a second time', () => {
+    const firstBridge = new HueBridge(TEST_BRIDGE_ID);
+    expect(firstBridge.properties).not.toMatchObject(TEST_BRIDGE_PROPERTIES);
+
+    const secondBridge = new HueBridge(TEST_BRIDGE_ID, TEST_BRIDGE_PROPERTIES);
+    expect(firstBridge.properties).toMatchObject(TEST_BRIDGE_PROPERTIES);
+  });
+
+  it('can be stored', () => {
+    const firstBridge = new HueBridge(TEST_BRIDGE_ID, TEST_BRIDGE_PROPERTIES);
+    expect(firstBridge.storage.write).toHaveBeenCalledTimes(1);
+
+    const secondBridge = new HueBridge(TEST_BRIDGE_ID);
+    expect(secondBridge.storage.read).toHaveBeenCalledTimes(1);
+    expect(secondBridge.properties).toMatchObject(TEST_BRIDGE_PROPERTIES);
+  });
+});
+
+describe('HueBridge retrieval', () => {
+  it('can be retrieved by id', () => {
+    const firstBridge = new HueBridge(TEST_BRIDGE_ID, TEST_BRIDGE_PROPERTIES);
+    const secondBridge = HueBridge.getById(TEST_BRIDGE_ID);
+    expect(secondBridge.properties).toMatchObject(TEST_BRIDGE_PROPERTIES);
+  });
+
+  it
