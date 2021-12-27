@@ -71,4 +71,49 @@ if (window.location.search) {
             refreshToken: json.refresh_token,
             tokenType: json.token_type,
             accessTokenExpiresAt:
-         
+              Date.now() + parseInt(json.access_token_expires_in, 10),
+            refreshTokenExpiresAt:
+              Date.now() + parseInt(json.refresh_token_expires_in, 10),
+          };
+
+          return fetch(`/bridge/0/config`, {
+            method: 'GET',
+            headers: {
+              Authorization: `Bearer ${bridgeOAuthProperties.accessToken}`,
+            },
+          });
+        })
+        .then((response) => {
+          return response.json();
+        })
+        .then((json) => {
+          bridgeId = json.bridgeid;
+          if (!bridgeId) {
+            oauthFailure(state);
+          }
+          HueBridgeList.load();
+          const bridge = HueBridge.getById(bridgeId);
+          if (bridge && bridge.properties.username) {
+            // If the bridge was authorized before, e.g. locally, add remote properties.
+            bridge.properties = {
+              ...bridge.properties,
+              ...bridgeOAuthProperties,
+              remote: true,
+            };
+            bridge.store();
+            ActiveBridge.select(bridgeId);
+            oauthSuccess(state);
+          } else {
+            // If the bridge was never seen before, authorize through remote API.
+            fetch(`/bridge/0/config`, {
+              method: 'PUT',
+              body: JSON.stringify({
+                linkbutton: true,
+              }),
+              headers: {
+                Authorization: `Bearer ${bridgeOAuthProperties.accessToken}`,
+                'content-type': 'application/json',
+              },
+            })
+              .then((response) => {
+            
