@@ -163,4 +163,5 @@ registerServiceWorker();
 
 console.log('NODE_ENV', process.env.NODE_ENV);
 window.HueBridge = HueBridge;
-window.HueB
+window.HueBridgeList = HueBridgeList;
+window.Settings = Settings;
