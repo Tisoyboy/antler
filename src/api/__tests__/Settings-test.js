@@ -24,4 +24,33 @@ it('reads settings previously written', () => {
   };
 
   Settings.write(firstSettings);
-  expect(storageInstance.write).
+  expect(storageInstance.write).toHaveBeenCalledTimes(1);
+  expect(Settings.read()).toEqual(firstSettings);
+  expect(storageInstance.read).toHaveBeenCalledTimes(1);
+
+  const secondSettings = {
+    appId: Math.random().toString(),
+    clientId: Math.random().toString(),
+    clientSecret: Math.random().toString(),
+  };
+
+  Settings.write(secondSettings);
+  expect(storageInstance.write).toHaveBeenCalledTimes(2);
+  expect(Settings.read()).toEqual(secondSettings);
+  expect(storageInstance.read).toHaveBeenCalledTimes(2);
+
+  const thirdSettings = {
+    appId: Math.random().toString(),
+    clientId: Math.random().toString(),
+    clientSecret: Math.random().toString(),
+  };
+
+  Settings.write(thirdSettings);
+  expect(storageInstance.write).toHaveBeenCalledTimes(3);
+  expect(Settings.read()).toEqual(thirdSettings);
+  expect(storageInstance.read).toHaveBeenCalledTimes(3);
+});
+
+it('returns blank state if not written before', () => {
+  expect(Settings.read()).toEqual({});
+});
