@@ -116,4 +116,51 @@ if (window.location.search) {
               },
             })
               .then((response) => {
-            
+                return response.json();
+              })
+              .then((json) => {
+                console.log(json);
+                if (!json[0] || !json[0].success) {
+                  oauthFailure(state);
+                }
+                return fetch(`/bridge`, {
+                  method: 'POST',
+                  body: JSON.stringify({
+                    devicetype:
+                      settings.appId || process.env.REACT_APP_OAUTH_APP_ID,
+                  }),
+                  headers: {
+                    Authorization: `Bearer ${bridgeOAuthProperties.accessToken}`,
+                    'content-type': 'application/json',
+                  },
+                });
+              })
+              .then((response) => {
+                return response.json();
+              })
+              .then((json) => {
+                if (!json[0] || !json[0].success) {
+                  oauthFailure(state);
+                }
+                const bridge = new HueBridge(bridgeId, {
+                  username: json[0].success.username,
+                  remote: true,
+                  ...bridgeOAuthProperties,
+                });
+                bridge.store();
+                HueBridgeList.add(bridgeId);
+                ActiveBridge.select(bridgeId);
+                oauthSuccess(state);
+              });
+          }
+        });
+    }
+  }
+}
+
+ReactDOM.render(<App />, document.getElementById('root'));
+registerServiceWorker();
+
+console.log('NODE_ENV', process.env.NODE_ENV);
+window.HueBridge = HueBridge;
+window.HueB
