@@ -147,4 +147,49 @@ class ConsoleView extends Component<PropsType, StateType> {
                     <button
                       className={
                         'dropdown-item' +
-                     
+                        (this.state.method === 'post' ? ' active' : '')
+                      }
+                      onClick={this.onMethodClick.bind(this, 'post')}
+                    >
+                      POST
+                    </button>
+                    <button
+                      className={
+                        'dropdown-item' +
+                        (this.state.method === 'put' ? ' active' : '')
+                      }
+                      onClick={this.onMethodClick.bind(this, 'put')}
+                    >
+                      PUT
+                    </button>
+                    <button
+                      className={
+                        'dropdown-item' +
+                        (this.state.method === 'delete' ? ' active' : '')
+                      }
+                      onClick={this.onMethodClick.bind(this, 'delete')}
+                    >
+                      DELETE
+                    </button>
+                  </div>
+                </div>
+                <label className="sr-only" htmlFor="path">
+                  Path
+                </label>
+                <input
+                  type="text"
+                  defaultValue={this.state.path}
+                  onChange={this.onPathChange.bind(this)}
+                  className="form-control"
+                  placeholder="/config"
+                  aria-label="Path"
+                />
+              </div>
+              <button
+                className="btn btn-primary"
+                disabled={this.state.network === 'loading'}
+                onClick={this.onSendClick.bind(this)}
+              >
+                Send
+              </button>
+            </
