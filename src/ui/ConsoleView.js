@@ -192,4 +192,40 @@ class ConsoleView extends Component<PropsType, StateType> {
               >
                 Send
               </button>
-            </
+            </div>
+            {this.state.method !== 'get' ? (
+              <div className="form-inline">
+                <label htmlFor="body" className="sr-only">
+                  Body
+                </label>
+                <textarea
+                  id="body"
+                  onChange={this.onBodyChange.bind(this)}
+                  className="form-control flex-fill"
+                  rows="3"
+                  placeholder="{ body: 'in json' }"
+                />
+              </div>
+            ) : null}
+          </div>
+        </div>
+        <div className="card my-3">
+          <div className="card-header">Response</div>
+          <div className="card-body">
+            {this.state.network === 'loading' ? (
+              <LoadingIndicator />
+            ) : this.state.network === 'done' ? (
+              <JsonEditor json={this.state.json} />
+            ) : (
+              <div className="alert alert-info mb-0" role="alert">
+                Send a request to see the response.
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
+
+export default ConsoleView;
