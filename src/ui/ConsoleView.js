@@ -98,3 +98,53 @@ class ConsoleView extends Component<PropsType, StateType> {
         .fetch(this.state.path, {
           method: this.state.method.toUpperCase(),
           body: this.state.body,
+        })
+        .then((json) => {
+          console.log(json);
+          this.setState({
+            json,
+            network: 'done',
+          });
+        });
+    }
+  };
+
+  componentDidMount() {
+    const bridge = this.getActiveBridge();
+    this.setState({
+      bridge,
+    });
+  }
+
+  render(): Element<'div'> {
+    return (
+      <div>
+        <div className="card my-3">
+          <div className="card-body">
+            <div className="form-inline">
+              <div className="input-group mb-2 mb-sm-0 mr-sm-2 flex-fill">
+                <div className="input-group-prepend">
+                  <button
+                    id="method"
+                    type="button"
+                    className="input-group-text btn btn-light dropdown-toggle"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    {this.state.method.toUpperCase()}
+                  </button>
+                  <div className="dropdown-menu" aria-labelledby="method">
+                    <button
+                      className={
+                        'dropdown-item' +
+                        (this.state.method === 'get' ? ' active' : '')
+                      }
+                      onClick={this.onMethodClick.bind(this, 'get')}
+                    >
+                      GET
+                    </button>
+                    <button
+                      className={
+                        'dropdown-item' +
+                     
