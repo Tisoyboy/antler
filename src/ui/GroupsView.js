@@ -65,3 +65,24 @@ class GroupsView extends Component {
         <div className="alert alert-info my-3" role="alert">
           No groups.
         </div>
+      );
+    } else {
+      return (
+        <div className="card-columns my-3">
+          {Object.keys(this.state.json).map((key) => {
+            return (
+              <Group
+                json={this.state.json[key]}
+                groupId={key}
+                lights={this.state.lights}
+                key={key}
+              />
+            );
+          })}
+        </div>
+      );
+    }
+  }
+}
+
+export default GroupsView;
