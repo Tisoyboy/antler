@@ -88,4 +88,50 @@ class Light extends Component {
                 )}
               >
                 <small>JSON</small>
-              </button
+              </button>
+            </h5>
+            {cardBody}
+            <div className="card-footer text-muted">
+              {`${json.productname} (${json.manufacturername} ${json.modelid})`}
+            </div>
+          </div>
+        );
+      case 'item':
+        return (
+          <li
+            className="list-group-item"
+            style={{
+              backgroundColor: hex,
+              backgroundImage: `linear-gradient(90deg, ${hex} 0%, ${hex} ${
+                brightness * 100
+              }%, black ${brightness * 100}%, black 100%)`,
+              color: fontColor,
+            }}
+          >
+            {json.name}
+          </li>
+        );
+      case 'circle':
+        return (
+          <div className="light" style={this.props.locations}>
+            <div className="lightSquare">
+              <div
+                className="lightCircle"
+                style={{
+                  backgroundColor: hex,
+                  backgroundImage: `radial-gradient(circle, ${hex} 0%, ${hex} ${
+                    brightness * 100
+                  }%, black ${brightness * 100}%, ${hex} 100%)`,
+                  color: fontColor,
+                }}
+              />
+            </div>
+          </div>
+        );
+      default:
+        throw new Error(`Unsupported rendering: ${this.props.rendering}`);
+    }
+  }
+}
+
+export default Light;
