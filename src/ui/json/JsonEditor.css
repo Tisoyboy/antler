@@ -1,0 +1,13 @@
+
+.jsonObject > ul,
+.jsonArray > ul {
+  list-style-type: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.jsonObject pre,
+.jsonArray pre {
+  display: inline;
+  font-size: medium;
+}
