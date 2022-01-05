@@ -53,4 +53,33 @@ class JsonObject extends Component<{
                   );
                   break;
                 case 'number':
-                  jsonContent =
+                  jsonContent = <JsonNumber json={value} />;
+                  break;
+                case 'string':
+                  jsonContent = <JsonString json={value} />;
+                  break;
+                case 'boolean':
+                  jsonContent = <JsonBoolean json={value} />;
+                  break;
+                default:
+                  throw new Error('Invalid json property');
+              }
+              return (
+                <li key={key}>
+                  {nextIndentation}
+                  {`${JSON.stringify(key)}: `}
+                  {jsonContent}
+                  {index < keys.length - 1 ? ',' : null}
+                </li>
+              );
+            })}
+          </ul>
+        )}
+        {Object.keys(this.props.json).length === 0 ? null : currentIndentation}
+        {'}'}
+      </span>
+    );
+  }
+}
+
+export default JsonObject;
