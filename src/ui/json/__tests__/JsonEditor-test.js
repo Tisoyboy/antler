@@ -14,4 +14,26 @@ it('should render boolean', () => {
 
 it('should render number', () => {
   const wrapper = shallow(<JsonEditor json={42} />);
-  expect(wrapper.text()).toBe('<Json
+  expect(wrapper.text()).toBe('<JsonNumber />');
+});
+
+it('should render string', () => {
+  const wrapper = shallow(<JsonEditor json={''} />);
+  expect(wrapper.text()).toBe('<JsonString />');
+});
+
+it('should render array', () => {
+  const wrapper = shallow(<JsonEditor json={[]} />);
+  expect(wrapper.text()).toBe('<JsonArray />');
+});
+
+it('should render object', () => {
+  const wrapper = shallow(<JsonEditor json={{}} />);
+  expect(wrapper.text()).toBe('<JsonObject />');
+});
+
+it('should not render other types', () => {
+  expect(() => {
+    shallow(<JsonEditor json={function () {}} />);
+  }).toThrow();
+});
