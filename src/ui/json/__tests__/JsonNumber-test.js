@@ -29,4 +29,21 @@ it('should render NaN value', () => {
 });
 
 it('should be able to handle MAX_SAFE_INTEGER', () => {
-  const wrapper = shallow(<JsonNumber json={Number.MAX_SA
+  const wrapper = shallow(<JsonNumber json={Number.MAX_SAFE_INTEGER} />);
+  expect(wrapper.text()).toBe('9007199254740991');
+});
+
+it('should be able to handle MIN_SAFE_INTEGER', () => {
+  const wrapper = shallow(<JsonNumber json={Number.MIN_SAFE_INTEGER} />);
+  expect(wrapper.text()).toBe('-9007199254740991');
+});
+
+it('should be able to handle MAX_VALUE', () => {
+  const wrapper = shallow(<JsonNumber json={Number.MAX_VALUE} />);
+  expect(wrapper.text()).toBe('1.7976931348623157e+308');
+});
+
+it('should be able to handle MIN_VALUE', () => {
+  const wrapper = shallow(<JsonNumber json={Number.MIN_VALUE} />);
+  expect(wrapper.text()).toBe('5e-324');
+});
