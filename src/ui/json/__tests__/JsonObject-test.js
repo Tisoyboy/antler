@@ -47,4 +47,8 @@ it('should render value in mixed types', () => {
   ].join(''));
 });
 
-i
+it('should not render other types', () => {
+  expect(() => {
+    mount(<JsonObject json={{ value: function () {} }} />);
+  }).toThrow();
+});
