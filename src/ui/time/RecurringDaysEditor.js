@@ -52,4 +52,29 @@ class RecurringDaysEditor extends Component<{
           className={`text-monospace text-${
             recurringDays[4] ? 'success' : 'muted'
           }`}
-          
+          disabled
+        >
+          F
+        </span>
+        <span
+          className={`text-monospace text-${
+            recurringDays[5] ? 'success' : 'muted'
+          }`}
+          disabled
+        >
+          S
+        </span>
+        <span
+          className={`text-monospace text-${
+            recurringDays[6] ? 'success' : 'muted'
+          }`}
+          disabled
+        >
+          S
+        </span>
+      </span>
+    );
+  }
+}
+
+export default RecurringDaysEditor;

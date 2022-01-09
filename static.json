@@ -1,0 +1,26 @@
+
+{
+  "root": "build/",
+  "routes": {
+    "/**": "index.html"
+  },
+  "proxies": {
+    "/oauth2": {
+      "origin": "https://api.meethue.com/oauth2",
+      "headers": {
+        "Authorization": "Basic ${OAUTH_CLIENT_ID_SECRET_HASH}"
+      }
+    },
+    "/bridge": {
+      "origin": "https://api.meethue.com/bridge"
+    }
+  },
+  "headers": {
+    "/oauth2/**": {
+      "Access-Control-Allow-Origin": "https://hueexplorer.app/"
+    },
+    "/bridge/**": {
+      "Access-Control-Allow-Origin": "https://hueexplorer.app/"
+    }
+  }
+}
