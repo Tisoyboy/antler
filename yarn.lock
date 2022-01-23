@@ -595,4 +595,29 @@
 
 "@babel/plugin-proposal-json-strings@^7.12.13":
   version "7.12.13"
-  resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-json-strings/-/plugin-proposal-json-string
+  resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-json-strings/-/plugin-proposal-json-strings-7.12.13.tgz#ced7888a2db92a3d520a2e35eb421fdb7fcc9b5d"
+  integrity sha512-v9eEi4GiORDg8x+Dmi5r8ibOe0VXoKDeNPYcTTxdGN4eOWikrJfDJCJrr1l5gKGvsNyGJbrfMftC2dTL6oz7pg==
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.12.13"
+    "@babel/plugin-syntax-json-strings" "^7.8.0"
+
+"@babel/plugin-proposal-json-strings@^7.16.5":
+  version "7.16.5"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-json-strings/-/plugin-proposal-json-strings-7.16.5.tgz#1e726930fca139caab6b084d232a9270d9d16f9c"
+  integrity sha512-QQJueTFa0y9E4qHANqIvMsuxM/qcLQmKttBACtPCQzGUEizsXDACGonlPiSwynHfOa3vNw0FPMVvQzbuXwh4SQ==
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.16.5"
+    "@babel/plugin-syntax-json-strings" "^7.8.3"
+
+"@babel/plugin-proposal-logical-assignment-operators@^7.12.13":
+  version "7.12.13"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-logical-assignment-operators/-/plugin-proposal-logical-assignment-operators-7.12.13.tgz#575b5d9a08d8299eeb4db6430da6e16e5cf14350"
+  integrity sha512-fqmiD3Lz7jVdK6kabeSr1PZlWSUVqSitmHEe3Z00dtGTKieWnX9beafvavc32kjORa5Bai4QNHgFDwWJP+WtSQ==
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.12.13"
+    "@babel/plugin-syntax-logical-assignment-operators" "^7.10.4"
+
+"@babel/plugin-proposal-logical-assignment-operators@^7.16.5":
+  version "7.16.5"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-logical-assignment-operators/-/plugin-proposal-logical-assignment-operators-7.16.5.tgz#df1f2e4b5a0ec07abf061d2c18e53abc237d3ef5"
+  integrity sha512-xqibl7ISO2vjuQM+MzR3rkd0zfNWltk7n9QhaD8ghMm
