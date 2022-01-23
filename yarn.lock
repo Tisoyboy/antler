@@ -543,4 +543,32 @@
     "@babel/helper-create-class-features-plugin" "^7.16.5"
     "@babel/helper-plugin-utils" "^7.16.5"
 
-"@babel/p
+"@babel/plugin-proposal-class-static-block@^7.16.5":
+  version "7.16.5"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-class-static-block/-/plugin-proposal-class-static-block-7.16.5.tgz#df58ab015a7d3b0963aafc8f20792dcd834952a9"
+  integrity sha512-EEFzuLZcm/rNJ8Q5krK+FRKdVkd6FjfzT9tuSZql9sQn64K0hHA2KLJ0DqVot9/iV6+SsuadC5yI39zWnm+nmQ==
+  dependencies:
+    "@babel/helper-create-class-features-plugin" "^7.16.5"
+    "@babel/helper-plugin-utils" "^7.16.5"
+    "@babel/plugin-syntax-class-static-block" "^7.14.5"
+
+"@babel/plugin-proposal-decorators@^7.16.4":
+  version "7.16.5"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-decorators/-/plugin-proposal-decorators-7.16.5.tgz#4617420d3685078dfab8f68f859dca1448bbb3c7"
+  integrity sha512-XAiZll5oCdp2Dd2RbXA3LVPlFyIRhhcQy+G34p9ePpl6mjFkbqHAYHovyw2j5mqUrlBf0/+MtOIJ3JGYtz8qaw==
+  dependencies:
+    "@babel/helper-create-class-features-plugin" "^7.16.5"
+    "@babel/helper-plugin-utils" "^7.16.5"
+    "@babel/plugin-syntax-decorators" "^7.16.5"
+
+"@babel/plugin-proposal-dynamic-import@^7.12.17":
+  version "7.12.17"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-dynamic-import/-/plugin-proposal-dynamic-import-7.12.17.tgz#e0ebd8db65acc37eac518fa17bead2174e224512"
+  integrity sha512-ZNGoFZqrnuy9H2izB2jLlnNDAfVPlGl5NhFEiFe4D84ix9GQGygF+CWMGHKuE+bpyS/AOuDQCnkiRNqW2IzS1Q==
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.12.13"
+    "@babel/plugin-syntax-dynamic-import" "^7.8.0"
+
+"@babel/plugin-proposal-dynamic-import@^7.16.5":
+  version "7.16.5"
+  resolv
