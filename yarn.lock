@@ -1003,4 +1003,31 @@
 
 "@babel/plugin-transform-computed-properties@^7.16.5":
   version "7.16.5"
-  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-computed-properties/-/plugin-transform-computed-properties
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-computed-properties/-/plugin-transform-computed-properties-7.16.5.tgz#2af91ebf0cceccfcc701281ada7cfba40a9b322a"
+  integrity sha512-n1+O7xtU5lSLraRzX88CNcpl7vtGdPakKzww74bVwpAIRgz9JVLJJpOLb0uYqcOaXVM0TL6X0RVeIJGD2CnCkg==
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.16.5"
+
+"@babel/plugin-transform-destructuring@^7.12.13":
+  version "7.12.13"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-destructuring/-/plugin-transform-destructuring-7.12.13.tgz#fc56c5176940c5b41735c677124d1d20cecc9aeb"
+  integrity sha512-Dn83KykIFzjhA3FDPA1z4N+yfF3btDGhjnJwxIj0T43tP0flCujnU8fKgEkf0C1biIpSv9NZegPBQ1J6jYkwvQ==
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.12.13"
+
+"@babel/plugin-transform-destructuring@^7.16.5":
+  version "7.16.5"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-destructuring/-/plugin-transform-destructuring-7.16.5.tgz#89ebc87499ac4a81b897af53bb5d3eed261bd568"
+  integrity sha512-GuRVAsjq+c9YPK6NeTkRLWyQskDC099XkBSVO+6QzbnOnH2d/4mBVXYStaPrZD3dFRfg00I6BFJ9Atsjfs8mlg==
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.16.5"
+
+"@babel/plugin-transform-dotall-regex@^7.12.13", "@babel/plugin-transform-dotall-regex@^7.4.4":
+  version "7.12.13"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-dotall-regex/-/plugin-transform-dotall-regex-7.12.13.tgz#3f1601cc29905bfcb67f53910f197aeafebb25ad"
+  integrity sha512-foDrozE65ZFdUC2OfgeOCrEPTxdB3yjqxpXh8CH+ipd9CHd4s/iq81kcUpyH8ACGNEPdFqbtzfgzbT/ZGlbDeQ==
+  dependencies:
+    "@babel/helper-create-regexp-features-plugin" "^7.12.13"
+    "@babel/helper-plugin-utils" "^7.12.13"
+
+"@babe
