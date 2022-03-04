@@ -1188,4 +1188,31 @@
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-modules-systemjs/-/plugin-transform-modules-systemjs-7.16.5.tgz#07078ba2e3cc94fbdd06836e355c246e98ad006b"
   integrity sha512-53gmLdScNN28XpjEVIm7LbWnD/b/TpbwKbLk6KV4KqC9WyU6rq1jnNmVG6UgAdQZVVGZVoik3DqHNxk4/EvrjA==
   dependencies:
-    "@babel/helper-hoist-variables" "^7.
+    "@babel/helper-hoist-variables" "^7.16.0"
+    "@babel/helper-module-transforms" "^7.16.5"
+    "@babel/helper-plugin-utils" "^7.16.5"
+    "@babel/helper-validator-identifier" "^7.15.7"
+    babel-plugin-dynamic-import-node "^2.3.3"
+
+"@babel/plugin-transform-modules-umd@^7.12.13":
+  version "7.12.13"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-modules-umd/-/plugin-transform-modules-umd-7.12.13.tgz#26c66f161d3456674e344b4b1255de4d530cfb37"
+  integrity sha512-BgZndyABRML4z6ibpi7Z98m4EVLFI9tVsZDADC14AElFaNHHBcJIovflJ6wtCqFxwy2YJ1tJhGRsr0yLPKoN+w==
+  dependencies:
+    "@babel/helper-module-transforms" "^7.12.13"
+    "@babel/helper-plugin-utils" "^7.12.13"
+
+"@babel/plugin-transform-modules-umd@^7.16.5":
+  version "7.16.5"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-modules-umd/-/plugin-transform-modules-umd-7.16.5.tgz#caa9c53d636fb4e3c99fd35a4c9ba5e5cd7e002e"
+  integrity sha512-qTFnpxHMoenNHkS3VoWRdwrcJ3FhX567GvDA3hRZKF0Dj8Fmg0UzySZp3AP2mShl/bzcywb/UWAMQIjA1bhXvw==
+  dependencies:
+    "@babel/helper-module-transforms" "^7.16.5"
+    "@babel/helper-plugin-utils" "^7.16.5"
+
+"@babel/plugin-transform-named-capturing-groups-regex@^7.12.13":
+  version "7.12.13"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-named-capturing-groups-regex/-/plugin-transform-named-capturing-groups-regex-7.12.13.tgz#2213725a5f5bbbe364b50c3ba5998c9599c5c9d9"
+  integrity sha512-Xsm8P2hr5hAxyYblrfACXpQKdQbx4m2df9/ZZSQ8MAhsadw06+jW7s9zsSw6he+mJZXRlVMyEnVktJo4zjk1WA==
+  dependencies:
+    "@babel/helper-create-regexp-features-plugin" 
