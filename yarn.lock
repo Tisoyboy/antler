@@ -1402,4 +1402,29 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.12.13"
 
-"@b
+"@babel/plugin-transform-shorthand-properties@^7.16.5":
+  version "7.16.5"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-shorthand-properties/-/plugin-transform-shorthand-properties-7.16.5.tgz#ccb60b1a23b799f5b9a14d97c5bc81025ffd96d7"
+  integrity sha512-ZbuWVcY+MAXJuuW7qDoCwoxDUNClfZxoo7/4swVbOW1s/qYLOMHlm9YRWMsxMFuLs44eXsv4op1vAaBaBaDMVg==
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.16.5"
+
+"@babel/plugin-transform-spread@^7.12.13":
+  version "7.12.13"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-spread/-/plugin-transform-spread-7.12.13.tgz#ca0d5645abbd560719c354451b849f14df4a7949"
+  integrity sha512-dUCrqPIowjqk5pXsx1zPftSq4sT0aCeZVAxhdgs3AMgyaDmoUT0G+5h3Dzja27t76aUEIJWlFgPJqJ/d4dbTtg==
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.12.13"
+    "@babel/helper-skip-transparent-expression-wrappers" "^7.12.1"
+
+"@babel/plugin-transform-spread@^7.16.5":
+  version "7.16.5"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-spread/-/plugin-transform-spread-7.16.5.tgz#912b06cff482c233025d3e69cf56d3e8fa166c29"
+  integrity sha512-5d6l/cnG7Lw4tGHEoga4xSkYp1euP7LAtrah1h1PgJ3JY7yNsjybsxQAnVK4JbtReZ/8z6ASVmd3QhYYKLaKZw==
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.16.5"
+    "@babel/helper-skip-transparent-expression-wrappers" "^7.16.0"
+
+"@babel/plugin-transform-sticky-regex@^7.12.13":
+  version "7.12.13"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-sticky-regex/-/plugin-transform-sticky-regex-7.12.13.
