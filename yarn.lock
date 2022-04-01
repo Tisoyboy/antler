@@ -1920,4 +1920,49 @@
     "@sinonjs/fake-timers" "^8.0.1"
     "@types/node" "*"
     jest-message-util "^27.4.2"
-    jest
+    jest-mock "^27.4.2"
+    jest-util "^27.4.2"
+
+"@jest/globals@^27.4.4":
+  version "27.4.4"
+  resolved "https://registry.yarnpkg.com/@jest/globals/-/globals-27.4.4.tgz#fe501a80c23ea2dab585c42be2a519bb5e38530d"
+  integrity sha512-bqpqQhW30BOreXM8bA8t8JbOQzsq/WnPTnBl+It3UxAD9J8yxEAaBEylHx1dtBapAr/UBk8GidXbzmqnee8tYQ==
+  dependencies:
+    "@jest/environment" "^27.4.4"
+    "@jest/types" "^27.4.2"
+    expect "^27.4.2"
+
+"@jest/reporters@^27.4.5":
+  version "27.4.5"
+  resolved "https://registry.yarnpkg.com/@jest/reporters/-/reporters-27.4.5.tgz#e229acca48d18ea39e805540c1c322b075ae63ad"
+  integrity sha512-3orsG4vi8zXuBqEoy2LbnC1kuvkg1KQUgqNxmxpQgIOQEPeV0onvZu+qDQnEoX8qTQErtqn/xzcnbpeTuOLSiA==
+  dependencies:
+    "@bcoe/v8-coverage" "^0.2.3"
+    "@jest/console" "^27.4.2"
+    "@jest/test-result" "^27.4.2"
+    "@jest/transform" "^27.4.5"
+    "@jest/types" "^27.4.2"
+    "@types/node" "*"
+    chalk "^4.0.0"
+    collect-v8-coverage "^1.0.0"
+    exit "^0.1.2"
+    glob "^7.1.2"
+    graceful-fs "^4.2.4"
+    istanbul-lib-coverage "^3.0.0"
+    istanbul-lib-instrument "^4.0.3"
+    istanbul-lib-report "^3.0.0"
+    istanbul-lib-source-maps "^4.0.0"
+    istanbul-reports "^3.0.2"
+    jest-haste-map "^27.4.5"
+    jest-resolve "^27.4.5"
+    jest-util "^27.4.2"
+    jest-worker "^27.4.5"
+    slash "^3.0.0"
+    source-map "^0.6.0"
+    string-length "^4.0.1"
+    terminal-link "^2.0.0"
+    v8-to-istanbul "^8.1.0"
+
+"@jest/source-map@^27.4.0":
+  version "27.4.0"
+  resolved "https://registry.yarnpkg.com/@jest/source-map/-/source-map-27.4.0.tgz#2f0385d0d884fb3e2554
