@@ -6352,3 +6352,50 @@ jest-resolve-dependencies@^27.4.5:
   version "27.4.5"
   resolved "https://registry.yarnpkg.com/jest-resolve-dependencies/-/jest-resolve-dependencies-27.4.5.tgz#9398af854bdb12d6a9e5a8a536ee401f889a3ecf"
   integrity sha512-elEVvkvRK51y037NshtEkEnukMBWvlPzZHiL847OrIljJ8yIsujD2GXRPqDXC4rEVKbcdsy7W0FxoZb4WmEs7w==
+  dependencies:
+    "@jest/types" "^27.4.2"
+    jest-regex-util "^27.4.0"
+    jest-snapshot "^27.4.5"
+
+jest-resolve@^27.4.2, jest-resolve@^27.4.5:
+  version "27.4.5"
+  resolved "https://registry.yarnpkg.com/jest-resolve/-/jest-resolve-27.4.5.tgz#8dc44f5065fb8d58944c20f932cb7b9fe9760cca"
+  integrity sha512-xU3z1BuOz/hUhVUL+918KqUgK+skqOuUsAi7A+iwoUldK6/+PW+utK8l8cxIWT9AW7IAhGNXjSAh1UYmjULZZw==
+  dependencies:
+    "@jest/types" "^27.4.2"
+    chalk "^4.0.0"
+    graceful-fs "^4.2.4"
+    jest-haste-map "^27.4.5"
+    jest-pnp-resolver "^1.2.2"
+    jest-util "^27.4.2"
+    jest-validate "^27.4.2"
+    resolve "^1.20.0"
+    resolve.exports "^1.1.0"
+    slash "^3.0.0"
+
+jest-runner@^27.4.5:
+  version "27.4.5"
+  resolved "https://registry.yarnpkg.com/jest-runner/-/jest-runner-27.4.5.tgz#daba2ba71c8f34137dc7ac45616add35370a681e"
+  integrity sha512-/irauncTfmY1WkTaRQGRWcyQLzK1g98GYG/8QvIPviHgO1Fqz1JYeEIsSfF+9mc/UTA6S+IIHFgKyvUrtiBIZg==
+  dependencies:
+    "@jest/console" "^27.4.2"
+    "@jest/environment" "^27.4.4"
+    "@jest/test-result" "^27.4.2"
+    "@jest/transform" "^27.4.5"
+    "@jest/types" "^27.4.2"
+    "@types/node" "*"
+    chalk "^4.0.0"
+    emittery "^0.8.1"
+    exit "^0.1.2"
+    graceful-fs "^4.2.4"
+    jest-docblock "^27.4.0"
+    jest-environment-jsdom "^27.4.4"
+    jest-environment-node "^27.4.4"
+    jest-haste-map "^27.4.5"
+    jest-leak-detector "^27.4.2"
+    jest-message-util "^27.4.2"
+    jest-resolve "^27.4.5"
+    jest-runtime "^27.4.5"
+    jest-util "^27.4.2"
+    jest-worker "^27.4.5"
+    source-map-support
