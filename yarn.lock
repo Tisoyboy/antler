@@ -7640,4 +7640,37 @@ postcss-color-functional-notation@^4.0.1:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/postcss-color-functional-notation/-/postcss-color-functional-notation-4.0.2.tgz#0e4d0d2d78f1d28d0acbed1a4d40bfcc2df06c32"
   integrity sha512-x/fTBfK7wdJpF7uCI8QQfNVyXW3KBI3/0n8S9N/iZjS8jahnIWFM6fcatLI6GXcQieuAse/1wo2NBVJm5Ud73w==
-  depe
+  dependencies:
+    postcss-value-parser "^4.2.0"
+
+postcss-color-hex-alpha@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/postcss-color-hex-alpha/-/postcss-color-hex-alpha-8.0.0.tgz#84bfd985a93b0a18e047ebcb5fd463e2cae5e7a6"
+  integrity sha512-Z0xiE0j+hbefUj0LWOMkzmTIS7k+dqJKzLwoKww0KJhju/sWXr+84Yk7rmvFoML/4LjGpJgefZvDwExrsWfHZw==
+  dependencies:
+    postcss-values-parser "^6.0.0"
+
+postcss-color-rebeccapurple@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/postcss-color-rebeccapurple/-/postcss-color-rebeccapurple-7.0.0.tgz#980fbd98eb68ebbb38be02a82c7554e043c8fdf4"
+  integrity sha512-+Ogw3SA0ESjjO87S8Dn+aAEHK6hFAWAVbTVnyXnmbV6Xh0TKi0vXpzhlKG/yrxujxtlgQcMQNQjg75uWWv28xA==
+  dependencies:
+    postcss-values-parser "^6"
+
+postcss-colormin@^5.2.1:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/postcss-colormin/-/postcss-colormin-5.2.1.tgz#6e444a806fd3c578827dbad022762df19334414d"
+  integrity sha512-VVwMrEYLcHYePUYV99Ymuoi7WhKrMGy/V9/kTS0DkCoJYmmjdOMneyhzYUxcNgteKDVbrewOkSM7Wje/MFwxzA==
+  dependencies:
+    browserslist "^4.16.6"
+    caniuse-api "^3.0.0"
+    colord "^2.9.1"
+    postcss-value-parser "^4.1.0"
+
+postcss-convert-values@^5.0.2:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/postcss-convert-values/-/postcss-convert-values-5.0.2.tgz#879b849dc3677c7d6bc94b6a2c1a3f0808798059"
+  integrity sha512-KQ04E2yadmfa1LqXm7UIDwW1ftxU/QWZmz6NKnHnUvJ3LEYbbcX6i329f/ig+WnEByHegulocXrECaZGLpL8Zg==
+  dependencies:
+    postcss-value-parser "^4.1.0"
+
