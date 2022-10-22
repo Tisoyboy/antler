@@ -7702,4 +7702,31 @@ postcss-dir-pseudo-class@^6.0.0:
 
 postcss-discard-comments@^5.0.1:
   version "5.0.1"
-  resolved "https://registry.yarnpkg.com/postcss-discard-comments/-/postcss-discard-comments-5.0.1.tgz#9eae4b
+  resolved "https://registry.yarnpkg.com/postcss-discard-comments/-/postcss-discard-comments-5.0.1.tgz#9eae4b747cf760d31f2447c27f0619d5718901fe"
+  integrity sha512-lgZBPTDvWrbAYY1v5GYEv8fEO/WhKOu/hmZqmCYfrpD6eyDWWzAOsl2rF29lpvziKO02Gc5GJQtlpkTmakwOWg==
+
+postcss-discard-duplicates@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/postcss-discard-duplicates/-/postcss-discard-duplicates-5.0.1.tgz#68f7cc6458fe6bab2e46c9f55ae52869f680e66d"
+  integrity sha512-svx747PWHKOGpAXXQkCc4k/DsWo+6bc5LsVrAsw+OU+Ibi7klFZCyX54gjYzX4TH+f2uzXjRviLARxkMurA2bA==
+
+postcss-discard-empty@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/postcss-discard-empty/-/postcss-discard-empty-5.0.1.tgz#ee136c39e27d5d2ed4da0ee5ed02bc8a9f8bf6d8"
+  integrity sha512-vfU8CxAQ6YpMxV2SvMcMIyF2LX1ZzWpy0lqHDsOdaKKLQVQGVP1pzhrI9JlsO65s66uQTfkQBKBD/A5gp9STFw==
+
+postcss-discard-overridden@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/postcss-discard-overridden/-/postcss-discard-overridden-5.0.1.tgz#454b41f707300b98109a75005ca4ab0ff2743ac6"
+  integrity sha512-Y28H7y93L2BpJhrdUR2SR2fnSsT+3TVx1NmVQLbcnZWwIUpJ7mfcTC6Za9M2PG6w8j7UQRfzxqn8jU2VwFxo3Q==
+
+postcss-double-position-gradients@^3.0.1:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/postcss-double-position-gradients/-/postcss-double-position-gradients-3.0.3.tgz#4c528dacfe3b7a52ea99665866912072184322b0"
+  integrity sha512-x3DYDhCsKS/sjH6t+sM9R+pq4lCwdHGVeUOpE/gDybfY33acJJie+NzRigKJVze7E/jH/1WGl/qPRV90Lso7Mg==
+  dependencies:
+    postcss-value-parser "^4.2.0"
+
+postcss-env-function@^4.0.2:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/postcss-env-function/-/postcss-
