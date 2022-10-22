@@ -7729,4 +7729,33 @@ postcss-double-position-gradients@^3.0.1:
 
 postcss-env-function@^4.0.2:
   version "4.0.3"
-  resolved "https://registry.yarnpkg.com/postcss-env-function/-/postcss-
+  resolved "https://registry.yarnpkg.com/postcss-env-function/-/postcss-env-function-4.0.3.tgz#cd56e3898d87b69c35d9b44b1df050a59757b803"
+  integrity sha512-RQ0CwXX161FLuC525Lx7VqsHXSPQvgErgOMcbfuAKPq1hgHDPJLemowVaPuWF4E3IO8rgUbStaRLGTM5VlN/vw==
+  dependencies:
+    postcss-value-parser "^4.2.0"
+
+postcss-flexbugs-fixes@^5.0.2:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/postcss-flexbugs-fixes/-/postcss-flexbugs-fixes-5.0.2.tgz#2028e145313074fc9abe276cb7ca14e5401eb49d"
+  integrity sha512-18f9voByak7bTktR2QgDveglpn9DTbBWPUzSOe9g0N4WR/2eSt6Vrcbf0hmspvMI6YWGywz6B9f7jzpFNJJgnQ==
+
+postcss-focus-visible@^6.0.1:
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/postcss-focus-visible/-/postcss-focus-visible-6.0.2.tgz#b5034899d098c26c68e6f901e2674c88ee1aaede"
+  integrity sha512-KYztrdQRRr+pPJQRAyr9HAEr8I8TUfpSyqOo8qddrjtMLap7Ud1FAF8szi4ZWrhMmch3EwL4RQMqsneOByWZIA==
+  dependencies:
+    postcss-selector-parser "^6.0.7"
+
+postcss-focus-within@^5.0.1:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/postcss-focus-within/-/postcss-focus-within-5.0.2.tgz#ba9229b68c03ad65aa4ead81ca29717b5b4dbf62"
+  integrity sha512-0zm8gM/fpFZtWM8drbj5M6HKVztHgLqtHygCMB494SOkudtnePpq5nv0ie2Jx/BrD+A5nhj0uK3tuMnEpjKonA==
+  dependencies:
+    postcss-selector-parser "^6.0.7"
+
+postcss-font-variant@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/postcss-font-variant/-/postcss-font-variant-5.0.0.tgz#efd59b4b7ea8bb06127f2d031bfbb7f24d32fa66"
+  integrity sha512-1fmkBaCALD72CK2a9i468mA/+tr9/1cBxRRMXOUaZqO43oWPR5imcyPjXwuv7PXbCid4ndlP5zWhidQVVa3hmA==
+
+postcss-gap-prope
