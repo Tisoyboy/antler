@@ -7758,4 +7758,34 @@ postcss-font-variant@^5.0.0:
   resolved "https://registry.yarnpkg.com/postcss-font-variant/-/postcss-font-variant-5.0.0.tgz#efd59b4b7ea8bb06127f2d031bfbb7f24d32fa66"
   integrity sha512-1fmkBaCALD72CK2a9i468mA/+tr9/1cBxRRMXOUaZqO43oWPR5imcyPjXwuv7PXbCid4ndlP5zWhidQVVa3hmA==
 
-postcss-gap-prope
+postcss-gap-properties@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/postcss-gap-properties/-/postcss-gap-properties-3.0.1.tgz#c663a2f116d980d8901f33c583e7205109acc87f"
+  integrity sha512-t7ztwUmG17KQRTHDWeekeSQ41ZsjYK+OJagee3E3hFS46n9RD5QcT/NRxwbc2DWjVSL5GQf46al3wEiH6FRSKg==
+
+postcss-image-set-function@^4.0.2:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/postcss-image-set-function/-/postcss-image-set-function-4.0.3.tgz#1be9324adf679226980c554542ea3fe5d056856f"
+  integrity sha512-+EZRaCg/MzsKW2ggTy26mG/uoHnEAjCcGICCkUYgg2PPguZaRjSBKY4KHiWcdH6ydsR7enlnO3i7bQ+Fpbx7vQ==
+  dependencies:
+    postcss-value-parser "^4.2.0"
+
+postcss-initial@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/postcss-initial/-/postcss-initial-4.0.1.tgz#529f735f72c5724a0fb30527df6fb7ac54d7de42"
+  integrity sha512-0ueD7rPqX8Pn1xJIjay0AZeIuDoF+V+VvMt/uOnn+4ezUKhZM/NokDeP6DwMNyIoYByuN/94IQnt5FEkaN59xQ==
+
+postcss-js@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/postcss-js/-/postcss-js-3.0.3.tgz#2f0bd370a2e8599d45439f6970403b5873abda33"
+  integrity sha512-gWnoWQXKFw65Hk/mi2+WTQTHdPD5UJdDXZmX073EY/B3BWnYjO4F4t0VneTCnCGQ5E5GsCdMkzPaTXwl3r5dJw==
+  dependencies:
+    camelcase-css "^2.0.1"
+    postcss "^8.1.6"
+
+postcss-lab-function@^4.0.1:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/postcss-lab-function/-/postcss-lab-function-4.0.2.tgz#6b91acb5f44e3ddc283c2c593b8858e5c261bda4"
+  integrity sha512-IkX1S1CROQF9uCu5F4/Ib5SRFDJXlJg3ig9x4OJkKIF16y0o7WRKfFje2ym+yThfwYjozwHZgf37Xwbnscpipg==
+  dependencies:
+    postcss-valu
