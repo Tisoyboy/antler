@@ -7854,4 +7854,36 @@ postcss-minify-gradients@^5.0.3:
 
 postcss-minify-params@^5.0.2:
   version "5.0.2"
-  resolved "https://registry.yarnpkg.com/postcss-mini
+  resolved "https://registry.yarnpkg.com/postcss-minify-params/-/postcss-minify-params-5.0.2.tgz#1b644da903473fbbb18fbe07b8e239883684b85c"
+  integrity sha512-qJAPuBzxO1yhLad7h2Dzk/F7n1vPyfHfCCh5grjGfjhi1ttCnq4ZXGIW77GSrEbh9Hus9Lc/e/+tB4vh3/GpDg==
+  dependencies:
+    alphanum-sort "^1.0.2"
+    browserslist "^4.16.6"
+    cssnano-utils "^2.0.1"
+    postcss-value-parser "^4.1.0"
+
+postcss-minify-selectors@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/postcss-minify-selectors/-/postcss-minify-selectors-5.1.0.tgz#4385c845d3979ff160291774523ffa54eafd5a54"
+  integrity sha512-NzGBXDa7aPsAcijXZeagnJBKBPMYLaJJzB8CQh6ncvyl2sIndLVWfbcDi0SBjRWk5VqEjXvf8tYwzoKf4Z07og==
+  dependencies:
+    alphanum-sort "^1.0.2"
+    postcss-selector-parser "^6.0.5"
+
+postcss-modules-extract-imports@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/postcss-modules-extract-imports/-/postcss-modules-extract-imports-3.0.0.tgz#cda1f047c0ae80c97dbe28c3e76a43b88025741d"
+  integrity sha512-bdHleFnP3kZ4NYDhuGlVK+CMrQ/pqUm8bx/oGL93K6gVwiclvX5x0n76fYMKuIGKzlABOy13zsvqjb0f92TEXw==
+
+postcss-modules-local-by-default@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/postcss-modules-local-by-default/-/postcss-modules-local-by-default-4.0.0.tgz#ebbb54fae1598eecfdf691a02b3ff3b390a5a51c"
+  integrity sha512-sT7ihtmGSF9yhm6ggikHdV0hlziDTX7oFoXtuVWeDd3hHObNkcHRo9V3yg7vCAY7cONyxJC/XXCmmiHHcvX7bQ==
+  dependencies:
+    icss-utils "^5.0.0"
+    postcss-selector-parser "^6.0.2"
+    postcss-value-parser "^4.1.0"
+
+postcss-modules-scope@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarn
