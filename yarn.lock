@@ -7915,4 +7915,33 @@ postcss-nesting@^10.0.2:
 postcss-normalize-charset@^5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/postcss-normalize-charset/-/postcss-normalize-charset-5.0.1.tgz#121559d1bebc55ac8d24af37f67bd4da9efd91d0"
-  integrity sha512-6J40l6LNYnBdPSk+BHZ8SF+HAkS4q2twe5jnocgd+xWpz/mx/5Sa32m3W1AA8
+  integrity sha512-6J40l6LNYnBdPSk+BHZ8SF+HAkS4q2twe5jnocgd+xWpz/mx/5Sa32m3W1AA8uE8XaXN+eg8trIlfu8V9x61eg==
+
+postcss-normalize-display-values@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/postcss-normalize-display-values/-/postcss-normalize-display-values-5.0.1.tgz#62650b965981a955dffee83363453db82f6ad1fd"
+  integrity sha512-uupdvWk88kLDXi5HEyI9IaAJTE3/Djbcrqq8YgjvAVuzgVuqIk3SuJWUisT2gaJbZm1H9g5k2w1xXilM3x8DjQ==
+  dependencies:
+    cssnano-utils "^2.0.1"
+    postcss-value-parser "^4.1.0"
+
+postcss-normalize-positions@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/postcss-normalize-positions/-/postcss-normalize-positions-5.0.1.tgz#868f6af1795fdfa86fbbe960dceb47e5f9492fe5"
+  integrity sha512-rvzWAJai5xej9yWqlCb1OWLd9JjW2Ex2BCPzUJrbaXmtKtgfL8dBMOOMTX6TnvQMtjk3ei1Lswcs78qKO1Skrg==
+  dependencies:
+    postcss-value-parser "^4.1.0"
+
+postcss-normalize-repeat-style@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/postcss-normalize-repeat-style/-/postcss-normalize-repeat-style-5.0.1.tgz#cbc0de1383b57f5bb61ddd6a84653b5e8665b2b5"
+  integrity sha512-syZ2itq0HTQjj4QtXZOeefomckiV5TaUO6ReIEabCh3wgDs4Mr01pkif0MeVwKyU/LHEkPJnpwFKRxqWA/7O3w==
+  dependencies:
+    cssnano-utils "^2.0.1"
+    postcss-value-parser "^4.1.0"
+
+postcss-normalize-string@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/postcss-normalize-string/-/postcss-normalize-string-5.0.1.tgz#d9eafaa4df78c7a3b973ae346ef0e47c554985b0"
+  integrity sha512-Ic8GaQ3jPMVl1OEn2U//2pm93AXUcF3wz+OriskdZ1AOuYV25OdgS7w9Xu2LO5cGyhHCgn8dMXh9bO7vi3i9pA==
+  dependencies:
