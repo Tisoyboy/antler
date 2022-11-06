@@ -8008,4 +8008,43 @@ postcss-page-break@^3.0.4:
 
 postcss-place@^7.0.1:
   version "7.0.2"
-  resolved "
+  resolved "https://registry.yarnpkg.com/postcss-place/-/postcss-place-7.0.2.tgz#f54e971a348e8fa76d65d94420a83302fc9416e1"
+  integrity sha512-XsZCU8X8M9dHKGlxdycihxPajSkRd4u+cIUJz/FgC61Mr/swStI3xAvsYai9Fh22kU+VVAn7ihoZk8h9pQhDfA==
+  dependencies:
+    postcss-value-parser "^4.2.0"
+
+postcss-preset-env@^7.0.1:
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/postcss-preset-env/-/postcss-preset-env-7.0.1.tgz#7f1fc5ac38e60a8e5ff9a920396d936a830e6120"
+  integrity sha512-oB7IJGwLBEwnao823mS2b9hqbp5Brm0EZKWRVROayjGwyPQVjY9gZpPZk/ItFakdx7GAPgv3ya+9R3KrUqCwYA==
+  dependencies:
+    autoprefixer "^10.4.0"
+    browserslist "^4.17.5"
+    caniuse-lite "^1.0.30001272"
+    css-blank-pseudo "^2.0.0"
+    css-has-pseudo "^2.0.0"
+    css-prefers-color-scheme "^5.0.0"
+    cssdb "^5.0.0"
+    postcss "^8.3"
+    postcss-attribute-case-insensitive "^5.0.0"
+    postcss-color-functional-notation "^4.0.1"
+    postcss-color-hex-alpha "^8.0.0"
+    postcss-color-rebeccapurple "^7.0.0"
+    postcss-custom-media "^8.0.0"
+    postcss-custom-properties "^12.0.0"
+    postcss-custom-selectors "^6.0.0"
+    postcss-dir-pseudo-class "^6.0.0"
+    postcss-double-position-gradients "^3.0.1"
+    postcss-env-function "^4.0.2"
+    postcss-focus-visible "^6.0.1"
+    postcss-focus-within "^5.0.1"
+    postcss-font-variant "^5.0.0"
+    postcss-gap-properties "^3.0.0"
+    postcss-image-set-function "^4.0.2"
+    postcss-initial "^4.0.1"
+    postcss-lab-function "^4.0.1"
+    postcss-logical "^5.0.0"
+    postcss-media-minmax "^5.0.0"
+    postcss-nesting "^10.0.2"
+    postcss-overflow-shorthand "^3.0.0"
+  
