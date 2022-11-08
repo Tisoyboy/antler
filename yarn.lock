@@ -8047,4 +8047,35 @@ postcss-preset-env@^7.0.1:
     postcss-media-minmax "^5.0.0"
     postcss-nesting "^10.0.2"
     postcss-overflow-shorthand "^3.0.0"
-  
+    postcss-page-break "^3.0.4"
+    postcss-place "^7.0.1"
+    postcss-pseudo-class-any-link "^7.0.0"
+    postcss-replace-overflow-wrap "^4.0.0"
+    postcss-selector-not "^5.0.0"
+
+postcss-pseudo-class-any-link@^7.0.0:
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/postcss-pseudo-class-any-link/-/postcss-pseudo-class-any-link-7.0.1.tgz#9b7b3572b78b0d6e2016bcc8762b254e341ebdde"
+  integrity sha512-Zt+VMw9qX7Um/cYOaywOQvXipDw/U3U83L6MFHocbjVIhLd+x5G4SSDmKm8sW2/HlaTno2Cazub8USrDvJ4DLA==
+  dependencies:
+    postcss-selector-parser "^6.0.7"
+
+postcss-reduce-initial@^5.0.2:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/postcss-reduce-initial/-/postcss-reduce-initial-5.0.2.tgz#fa424ce8aa88a89bc0b6d0f94871b24abe94c048"
+  integrity sha512-v/kbAAQ+S1V5v9TJvbGkV98V2ERPdU6XvMcKMjqAlYiJ2NtsHGlKYLPjWWcXlaTKNxooId7BGxeraK8qXvzKtw==
+  dependencies:
+    browserslist "^4.16.6"
+    caniuse-api "^3.0.0"
+
+postcss-reduce-transforms@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/postcss-reduce-transforms/-/postcss-reduce-transforms-5.0.1.tgz#93c12f6a159474aa711d5269923e2383cedcf640"
+  integrity sha512-a//FjoPeFkRuAguPscTVmRQUODP+f3ke2HqFNgGPwdYnpeC29RZdCBvGRGTsKpMURb/I3p6jdKoBQ2zI+9Q7kA==
+  dependencies:
+    cssnano-utils "^2.0.1"
+    postcss-value-parser "^4.1.0"
+
+postcss-replace-overflow-wrap@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/postcss-replace-overflow-wrap/-/postcss-replace-overflow-wrap-4.0.0.tgz#d2df6bed10b477bf9c52f
